@@ -1,0 +1,66 @@
+.links a {
+    display: block;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    color: var(--clr-grey-5);
+    transition: var(--transition);
+  }
+  .links a:hover {
+    background: var(--clr-primary-8);
+    color: var(--clr-primary-5);
+    padding-left: 1.75rem;
+  }
+  .social-icons {
+    justify-self: center;
+    display: flex;
+    padding-bottom: 2rem;
+  }
+  .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+  }
+  .social-icons a:hover {
+    color: var(--clr-primary-1);
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: var(--clr-white);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    /* Adds the shadow */
+    box-shadow: 4px 0 8px rgba(163, 17, 17, 0.2); /* Adjust for shadow size and blur */    
+    /* Adds the border (3px solid black line on the left) */
+    border-left: 4px solid rgb(71, 57, 57);
+    transition: var(--transition);
+     transform: translate(-100%); 
+  }
+  .show-sidebar {
+    transform: translate(0);
+  }
+  @media screen and (min-width: 676px) {
+    .sidebar {
+      width: 300px;
+    }
+  }
+  .sidebar-toggle{
+    margin-left: 97%;
+    color: red;
+  }
+  .close-btn {
+    display: flex;
+    color: red;
+    margin-left: 87%;
+    margin-top: -12%;
+  }
+  .logo{
+    margin-top: 10px;
+   margin-left: 10px;
+}
